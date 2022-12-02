@@ -22,6 +22,43 @@ Status- Measure status, 2 possible: bereinigt(adjusted), provisorisch(provisiona
 
 
 
+I consider this dataset interesting because through it is possible to check the air quality and its trend in the last five years, thus being able to see which gases are at dangerous levels and, if that happens, to create measures to reduce the emission of these gases in order to improve the life of the population.
+
+---
+
+**Task want to perform:** 
+Check the trend of each gas for each station, since both are close to the center of Zurich but in different zones
+
+
+**Problem to solve:**
+Check which gases are at the most dangerous levels and create measures to reduce their emission
+
+
+**Question to be answered:**
+Does the variation depend much on the station?Since both are close to the center of Zurich but in different zones
+
+---
+
+Existem 4 estações como referido, todas elas encontram-se perto do centro de Zurique. Descrição de local onde cada uma se encontra.
+Zch_Stampfenbachstrasse- A estação de medição está localizada no centro da cidade de Zurique. Representa uma localização urbana com tráfego moderado. 
+Zch_Schimmelstrasse- A estação de medição está localizada em um eixo principal de tráfego urbano em um local central em um bairro residencial e comercial da cidade de Zurique. Representa um local urbano com tráfego muito intenso
+Zch_Rosengartenstrasse- "A estação de medição está localizada em um eixo principal de tráfego urbano em um local central em um bairro residencial e comercial da cidade de Zurique. Representa um local urbano com tráfego muito intenso
+Zch_Heubeeribüel- A estação de medição está localizada em uma área escolar em uma colina elevada nos arredores da cidade de Zurique, adjacente a um campo aberto em direção à floresta de Zurichberg. A localização é representativa de áreas residenciais e recreativas com pouco tráfego na à beira das grandes aglomerações
+
+
+As 4 estações têm diferentes quantidades de entradas, será analisada uma análise para analisar a que correspondem estas diferenças
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
