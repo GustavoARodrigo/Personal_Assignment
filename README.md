@@ -27,26 +27,46 @@ I consider this dataset interesting because through it is possible to check the 
 ---
 
 **Task want to perform:** 
-Check the trend of each gas for each station, since both are close to the center of Zurich but in different zones
+Check the trend of the most harmful gases for each station, since both are close to the center of Zurich but in different zones.
 
 
 **Problem to solve:**
-Check which gases are at the most dangerous levels and create measures to reduce their emission
+Check which gases are at the most dangerous levels and create measures to reduce their emission or create measures to reduce their negative effects.
 
 
 **Question to be answered:**
-Does the variation depend much on the station?Since both are close to the center of Zurich but in different zones
+Does the variation depend much on the station?Since both are close to the center of Zurich but in different zones.
 
 ---
 
-Existem 4 estações como referido, todas elas encontram-se perto do centro de Zurique. Descrição de local onde cada uma se encontra.
-Zch_Stampfenbachstrasse- A estação de medição está localizada no centro da cidade de Zurique. Representa uma localização urbana com tráfego moderado. 
-Zch_Schimmelstrasse- A estação de medição está localizada em um eixo principal de tráfego urbano em um local central em um bairro residencial e comercial da cidade de Zurique. Representa um local urbano com tráfego muito intenso
-Zch_Rosengartenstrasse- "A estação de medição está localizada em um eixo principal de tráfego urbano em um local central em um bairro residencial e comercial da cidade de Zurique. Representa um local urbano com tráfego muito intenso
-Zch_Heubeeribüel- A estação de medição está localizada em uma área escolar em uma colina elevada nos arredores da cidade de Zurique, adjacente a um campo aberto em direção à floresta de Zurichberg. A localização é representativa de áreas residenciais e recreativas com pouco tráfego na à beira das grandes aglomerações
+I started by choosing to analyze the variables in the dataset and some statistics.
+
+Then I created new columns for day, month, year, combination of year and month and finally combination of year, month and day to make the analysis and visualization easier.
+
+After creating the new columns, I decided to eliminate December 1, 2022, because I did not consider it relevant to keep only one month with a day that is not even complete. This way the dataset now has only complete months. 
 
 
-As 4 estações têm diferentes quantidades de entradas, será analisada uma análise para analisar a que correspondem estas diferenças
+Then I did some visualizations and I could see that:
+
+* Some gases have higher values than desired
+* The trends of each gas for the 4 seasons together
+* That the status varies between 40.6% corrected and 59.4% provisional
+* And that not all gases have the same amount of data which will be explored next
+
+
+
+
+
+
+As mentioned, there are 4 stations, all located near Zurich's city center. Description of where each one is located:
+* Zch_Stampfenbachstrasse- The measuring station is located in the city center of Zurich. It represents an urban location with moderate traffic. 
+* Zch_Schimmelstrasse- The measuring station is located on a main urban traffic axis at a central location in a residential and commercial district of the city of Zurich. It represents an urban location with very heavy traffic.
+* Zch_Rosengartenstrasse- The measuring station is located on a main urban traffic axis at a central location in a residential and commercial district of the city of Zurich. It represents an urban location with very heavy traffic
+* Zch_Heubeeribüel- The measuring station is located in a school area on a high hill on the outskirts of the city of Zurich, adjacent to an open field towards the Zurichberg forest. The location is representative of residential and recreational areas with little traffic on the edge of large conurbations
+
+The 4 stations have different amounts of inputs, an analysis will be made to analyze what these differences correspond to
+
+
 
 
 
