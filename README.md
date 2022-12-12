@@ -2,7 +2,7 @@
 
 **Dataset choosed** : [Hourly updated air quality measurements, since 1983](https://data.europa.eu/data/datasets/6a8f6d04-d078-4c27-a84c-f3e1bbc420ed-stadt-zurich?locale=en)
 
-The dataset is about hourly measurements about air quality in Zurich from 1983 to the last current hour divided in annual files. I downloaded the file on December 1, 2022 at about 5 pm, so that will be the date of the last measurements. I chose the last five years (2018-2022) due to the fact that the measurements are made hourly, and by 4 different sensors at the same time, and this makes the dataset with to many inputs, and also due to the fact that I am more interested in the evolution in the last five years.
+The dataset is about hourly measurements about air quality in Zurich from 1983 to the last current hour divided in annual files. I downloaded the file on December 1, 2022 at about 5 pm, so that will be the date of the last measurements but I will delete December 1, 2022 in order to have only complete months in the dataset. I chose the last five years (2018-2022) due to the fact that the measurements are made hourly, and by 4 different sensors at the same time, and this makes the dataset with to many inputs, and also due to the fact that I am more interested in the evolution in the last five years.
   
 The dataset have 7 columns: Datum, Standort, Parameter, Intervall, Einheit, Wert, Status.
 
