@@ -51,7 +51,7 @@ Then I did some visualizations and I could see that:
 * Some gases have higher values than desired
 * The trends of each gas for the 4 seasons together
 * That the status varies between 40.6% corrected and 59.4% provisional
-* And that not all gases have the same amount of data which will be explored next
+* And that not all gases neither all Stations have the same amount of data which will be explored next
 
 
 
@@ -64,15 +64,36 @@ As mentioned, there are 4 stations, all located near Zurich's city center. Descr
 * Zch_Rosengartenstrasse- The measuring station is located on a main urban traffic axis at a central location in a residential and commercial district of the city of Zurich. It represents an urban location with very heavy traffic
 * Zch_Heubeeribüel- The measuring station is located in a school area on a high hill on the outskirts of the city of Zurich, adjacent to an open field towards the Zurichberg forest. The location is representative of residential and recreational areas with little traffic on the edge of large conurbations
 
-The 4 stations have different amounts of inputs, an analysis will be made to analyze what these differences correspond to
+The 4 stations have different amounts of inputs, an analysis will be made to analyze what these differences correspond to.
+
+After creating a scatter plot for each station the difference in inputs became evident. This difference exists because not all stations measure the same number of gases.
+
+* Zch_Stampfenbachstrasse- NO2, NO, NOx, O3, PM10, PM2.5, CO, SO2
+* Zch_Schimmelstrasse- NO2, NO, NOx, O3, PM10, PM2.5
+* Zch_Rosengartenstrasse- NO2, NO, NOx, O3, PM10, PM2..5
+* Zch_Heubeeribüel- NO2, NO, NOx, O3
 
 
+In order to analyze the levels of each gas for each station, a survey was carried out to see which gases are the most dangerous when they are at high levels. In the research it was possible to verify that we have 3 of the gases that are on the list of most dangerous gases. These are NO2, O3 and PM2.5. Both NO2 and O3 are measured at all four stations but PM2.5 is only measured at three of the four stations. 
 
 
+I chose to do daily analysis in order to see the trend of each gas for each season. The NO2 and O3 thresholds do not change if measured for one hour or for 24 hours, but PM2.5 varies.
+Threshols limits for each of the gases to be analyzed (24 hours average)
 
-
-
-
+* NO2:
+    * Ideal: NO2 < 50
+    * Normal: 50 < NO2 < 100
+    * High: 100 < NO2
+    
+* O3:
+    * Ideal: O3 < 65
+    * Normal: 65 < O3 < 120
+    * High: 120 < O3
+    
+* PM2.5:
+    * Ideal: PM2.5 < 10
+    * Normal: 10 < PM2.5 < 20
+    * High: 20 < PM2.5
 
 
 
