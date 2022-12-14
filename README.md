@@ -54,10 +54,6 @@ Then I did some visualizations and I could see that:
 * And that not all gases neither all Stations have the same amount of data which will be explored next
 
 
-
-
-
-
 As mentioned, there are 4 stations, all located near Zurich's city center. Description of where each one is located:
 * Zch_Stampfenbachstrasse- The measuring station is located in the city center of Zurich. It represents an urban location with moderate traffic. 
 * Zch_Schimmelstrasse- The measuring station is located on a main urban traffic axis at a central location in a residential and commercial district of the city of Zurich. It represents an urban location with very heavy traffic.
@@ -77,7 +73,7 @@ After creating a scatter plot for each station the difference in inputs became e
 In order to analyze the levels of each gas for each station, a survey was carried out to see which gases are the most dangerous when they are at high levels. In the research it was possible to verify that we have 3 of the gases that are on the list of most dangerous gases. These are NO2, O3 and PM2.5. Both NO2 and O3 are measured at all four stations but PM2.5 is only measured at three of the four stations. 
 
 
-I chose to do daily analysis in order to see the trend of each gas for each season. The NO2 and O3 thresholds do not change if measured for one hour or for 24 hours, but PM2.5 varies.
+I chose to do daily analysis in order to see the trend of each gas for each station. The NO2 and O3 thresholds do not change if measured for one hour or for 24 hours, but PM2.5 varies.
 Threshols limits for each of the gases to be analyzed (24 hours average)
 
 * NO2:
@@ -95,12 +91,15 @@ Threshols limits for each of the gases to be analyzed (24 hours average)
     * Normal: 10 < PM2.5 < 20
     * High: 20 < PM2.5
 
+## Gas analysis on each Station*
 
+#### Zch_Stampfenbachstrasse
 
+NO2: Always at safe levels over time, we can see that in the first weeks of each year there is an increase, which takes it from ideal to normal levels, but never gets close to dangerous levels.
 
+O3:always at safe levels with the exception of two days; other than that, it does not represent any danger to the population. It is also possible to verify that in the first half of each year, the values are rising, and from then on they start to fall again until the year is over.
 
-
-
+PM2.5:
 
 
 
