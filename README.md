@@ -2,7 +2,7 @@
 
 **Dataset choosed** : [Hourly updated air quality measurements, since 1983](https://data.europa.eu/data/datasets/6a8f6d04-d078-4c27-a84c-f3e1bbc420ed-stadt-zurich?locale=en)
 
-The dataset is about hourly measurements about air quality in Zurich from 1983 to the last current hour divided in annual files. I downloaded the file on December 1, 2022 at about 5 pm, so that will be the date of the last measurements but I will delete December 1, 2022 in order to have only complete months in the dataset. I chose the last five years (2018-2022) due to the fact that the measurements are made hourly, and by 4 different sensors at the same time, and this makes the dataset with to many inputs, and also due to the fact that I am more interested in the evolution in the last five years.
+The dataset is about hourly measurements about air quality in Zurich from 1983 to the last current hour divided in annual files. I downloaded the 5 csv files (87 252 KB) on December 1, 2022 at about 5 pm, so that will be the date of the last measurements but I will delete December 1, 2022 in order to have only complete months in the dataset. I chose the last five years (2018-2022) due to the fact that the measurements are made hourly, and by 4 different sensors at the same time, and this makes the dataset with to many inputs, and also due to the fact that I am more interested in the evolution in the last five years.
   
 The dataset have 7 columns: Datum, Standort, Parameter, Intervall, Einheit, Wert, Status.
 
@@ -95,11 +95,81 @@ Threshols limits for each of the gases to be analyzed (24 hours average)
 
 #### Zch_Stampfenbachstrasse
 
-NO2: Always at safe levels over time, we can see that in the first weeks of each year there is an increase, which takes it from ideal to normal levels, but never gets close to dangerous levels.
+NO2: Always at safe levels over time, it is possible to see a trend, in the first half of each year the gas values are going down, in the second half they go up again, but never gets close to dangerous levels. This trend repeats itself over the five years present in the dataset. 
 
-O3:always at safe levels with the exception of two days; other than that, it does not represent any danger to the population. It is also possible to verify that in the first half of each year, the values are rising, and from then on they start to fall again until the year is over.
+O3: Always at safe levels with the exception of two days; other than that, it does not represent any danger to the population. It is also possible to verify that in the first half of each year, the values are rising, and from then on they start to fall again until the year is over.
 
-PM2.5:
+PM2.5: Great majority of the time in the green and yellow zone, with some peaks in the red zone. Shows some worrying levels when it enters the red zone.
+
+
+#### Zch_Schimmelstrasse
+
+NO2: Always at safe levels over time, it is possible to see a trend, in the first half of each year the gas values are going down, in the second half they go up again, but never get close to dangerous levels. This trend repeats itself over the five years present in the dataset.
+
+O3: Always at safe levels and doesn't represent any danger to population. It is also possible to verify that in the first half of each year, the values are rising, and from then on they start to fall again until the year is over. Varies in the opposite direction to NO2.
+
+PM2.5: Great majority of the time in the green and yellow zone, with some peaks in the red zone. Shows some worrying levels when it enters the red zone.
+
+
+#### Zch_Rosengartenstrasse
+
+NO2: Always at safe levels over time, doesn't represent any danger ro population and have fairly constant variation between 20 and 80 throughout the entire dataset.
+
+O3: Always at safe levels and doesn't represent any danger to population. It is also possible to verify that in the first half of each year, the values are rising, and from then on they start to fall again until the year is over.
+
+PM2.5: Great majority of the time in the green and yellow zone, with some peaks in the red zone. Shows some worrying levels when it enters the red zone.
+
+
+#### Zch_Heubeeribüel
+
+NO2: Always at the ideal values throughout the dataset, it is possible to verify a trend, in the first half of each year the values go down and in the second half they go up.
+
+O3: Almost always at safe levels and just a few peaks on the danger zone. It is also possible to verify that in the first half of each year, the values are rising, and from then on they start to fall again until the year is over.
+
+PM2.5: Zch_Heubeeribüel does not measure PM2.5
+
+
+---
+
+### Resolution of the problem
+
+After the detailed analysis of each gas per station it is possible to see which gases are at dangerous levels and now create possible measures to reduce the emission of these gases and/or create measures that reduce their impacts.
+
+We can see that the NO2 levels never reach the dangerous levels, so there is no need to create measures.
+The same is not true for O3, at stations Zch_Heubeeribüel and Zch_Stampfenbachstrasse there are some observations (days) where the O3 values enter the red zone, thus creating the need to present measures to reduce O3 emissions. The stations Zch_Schimmelstrasse and Zch_Rosengartenstrasse do not present any danger.
+The gas analyzed that presents the most worrying values is undoubtedly PM2.5. It presents dangerous values for all stations (except Zch_Heubeeribüel, because it does not measure this gas), so it will be necessary to implement measures to reduce the emission of this gas.
+
+
+Exposure to high levels of ozone may cause headaches, coughing, dry throat, shortness of breath, a heavy feeling in chest, and fluid in the lungs. Higher levels of exposure can lead to more severe symptoms. Chronic exposure may lead to asthma.
+**Measures to reduce ozone levels** are for example the creation of incentives for the use of public transportation, cycling and the purchase of electric and hybrid cars and even the creation of circulation limits in a certain area and at a certain time of the year when ozone emissions are highest.
+
+
+
+
+Exposure to high levels of PM2.5 can cause short-term health effects such as eye, nose, throat and lung irritation, coughing, sneezing, runny nose and shortness of breath.
+**Measures to reduce PM2.5 levels or combat the impacts** are ot smoking, keeping the level of exercise low, especially when the temperature is high and stay indoors in an area with filtered air
+
+
+
+**Question to be answered:**
+Does the variation depend much on the station?Since both are close to the center of Zurich but in different zones.
+
+Apart from the case of O3, there is not much variation from station to station, so the measures to be applied can be applied for the entire city of Zurich. It is possible to notice that the values are not exactly the same for all stations, but the differences found are not relevant at all
+
+
+---
+
+**Useful links**
+
+[Dataset](https://data.europa.eu/data/datasets/6a8f6d04-d078-4c27-a84c-f3e1bbc420ed-stadt-zurich?locale=en)
+[Visualizations](https://towardsdatascience.com/8-visualizations-with-python-to-handle-multiple-time-series-data-19b5b2e66dd0)
+[Gases Limits](https://www.breeze-technologies.de/blog/what-is-an-air-quality-index-how-is-it-calculated/)
+[Harmful Gases](https://www.gdscorp.com/blog/gas-emission/5-types-of-toxic-gas-their-health-effects/)
+[O3 Gases](https://scdhec.gov/environment/your-air/most-common-air-pollutants/about-ozone/how-help-reduce-ozone)
+[PM2.5 Measures](https://www.airnow.gov/aqi/aqi-basics/extremely-high-levels-of-pm25/)
+
+
+
 
 
 
