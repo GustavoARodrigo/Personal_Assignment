@@ -161,12 +161,12 @@ Apart from the case of O3, there is not much variation from station to station, 
 
 **Useful links**
 
-[Dataset](https://data.europa.eu/data/datasets/6a8f6d04-d078-4c27-a84c-f3e1bbc420ed-stadt-zurich?locale=en)
-[Visualizations](https://towardsdatascience.com/8-visualizations-with-python-to-handle-multiple-time-series-data-19b5b2e66dd0)
-[Gases Limits](https://www.breeze-technologies.de/blog/what-is-an-air-quality-index-how-is-it-calculated/)
-[Harmful Gases](https://www.gdscorp.com/blog/gas-emission/5-types-of-toxic-gas-their-health-effects/)
-[O3 Gases](https://scdhec.gov/environment/your-air/most-common-air-pollutants/about-ozone/how-help-reduce-ozone)
-[PM2.5 Measures](https://www.airnow.gov/aqi/aqi-basics/extremely-high-levels-of-pm25/)
+[Dataset](https://data.europa.eu/data/datasets/6a8f6d04-d078-4c27-a84c-f3e1bbc420ed-stadt-zurich?locale=en);
+[Visualizations](https://towardsdatascience.com/8-visualizations-with-python-to-handle-multiple-time-series-data-19b5b2e66dd0);
+[Gases Limits](https://www.breeze-technologies.de/blog/what-is-an-air-quality-index-how-is-it-calculated/);
+[Harmful Gases](https://www.gdscorp.com/blog/gas-emission/5-types-of-toxic-gas-their-health-effects/);
+[O3 Gases](https://scdhec.gov/environment/your-air/most-common-air-pollutants/about-ozone/how-help-reduce-ozone);
+[PM2.5 Measures](https://www.airnow.gov/aqi/aqi-basics/extremely-high-levels-of-pm25/).
 
 
 
